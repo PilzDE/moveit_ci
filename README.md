@@ -140,7 +140,7 @@ It's also possible to run the script without using docker. To this end, issue th
 
     export IN_DOCKER=1               # pretend running docker
     export CI_SOURCE_PATH=$PWD       # repository location in, i.e. /tmp/travis/moveit
-    alias apt-get="sudo apt-get"     # docker executed everythin with su rights, we don't
+    alias apt-get="sudo apt-get"     # docker executes everything with su rights, we don't
     export ROS_WS=/tmp/ros_ws        # define a new ROS workspace location
     mkdir $ROS_WS                    # and create it
     .moveit_ci/travis.sh
